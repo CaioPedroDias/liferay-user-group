@@ -3,22 +3,28 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
 }
+.fundo-login{
+  background-image: url(../img/Screenshot_14.png);
+  overflow: hidden;
+  
+  
+}
 .header {
   background-color: #0b5fff;
-  display:grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   color: #eaeaea;
   padding: 0 20px;
 }
 
-.icones{
-  justify-content:right;
+.icones {
+  justify-content: right;
   display: flex;
   align-self: center;
   gap: 40px;
 }
 
-.icones img{
+.icones img {
   height: 44px;
   width: 44px;
 }
