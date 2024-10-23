@@ -3,11 +3,10 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   height: 100%;
 }
+/*Header*/
 .fundo-login{
   background-image: url(../img/Screenshot_14.png);
   overflow: hidden;
-  
-  
 }
 .header {
   background-color: #0b5fff;
@@ -28,7 +27,7 @@ body {
   height: 44px;
   width: 44px;
 }
-
+/* Main (Login box)*/
 .login-container {
   display: flex;
   justify-content: center;
