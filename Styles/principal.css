@@ -96,7 +96,7 @@ main {
 }
 
 .meetup-thumb {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 15px;
 }
@@ -107,8 +107,8 @@ main {
 }
 
 .meetup-tag {
-  background-color: #0b5fff;
-  color: white;
+  background-color: #FFCFA3;
+  color: rgb(0, 0, 0);
   border: none;
   padding: 5px;
   border-radius: 3px;
