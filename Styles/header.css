@@ -1,0 +1,59 @@
+/* Global */
+.header {
+  background-color: #0b5fff;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  color: #eaeaea;
+  padding: 0 20px;
+}
+
+.header h1 {
+  justify-self: start;
+}
+
+.icones {
+  display: flex;
+  justify-self: end;
+  gap: 40px;
+}
+
+.icones img {
+  height: 44px;
+  width: 44px;
+}
+/* /Global */
+/* Search Bar*/
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  padding: 2px;
+  background-color: white;
+  width: 400px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  height: 35px;
+}
+
+.search-bar .divisor {
+  height: 100%;
+  display: flex;
+  border-left: 2px solid black;
+  margin: 0 10px;
+}
+
+.search-bar img {
+  height: 25px;
+  width: 25px;
+}
+
+
+#pesquisa {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 10px;
+}
+/*Search Bar*/

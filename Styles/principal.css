@@ -1,71 +1,11 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  background-color: #0b5fff;
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  align-items: center;
-  color: #eaeaea;
-  padding: 0 20px;
-}
-
-.header h1 {
-  justify-self: start;
-}
-
-.search-bar {
-  display: flex;
-  align-items: center;
-  justify-self: center;
-  padding: 2px;
-  background-color: white;
-  width: 400px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 4px;
-  height: 35px;
-}
-
-.search-bar .divisor {
-  height: 100%;
-  display: flex;
-  border-left: 2px solid black;
-  margin: 0 10px;
-}
-
-.search-bar img {
-  height: 25px;
-  width: 25px;
-}
-
-.icones {
-  display: flex;
-  justify-self: end;
-  gap: 40px;
-}
-
-.icones img {
-  height: 44px;
-  width: 44px;
-}
-
-#pesquisa {
-  flex: 1;
-  border: none;
-  outline: none;
-  padding: 10px;
-}
+@import "./global.css";
+@import "./header.css";
 
 main {
   display: flex;
   height: calc(100vh - 60px);
 }
-
+/* Meetup Module*/
 .meetup-recente {
   width: 45%;
   border-right: #000000 solid 0.5px;
@@ -106,10 +46,14 @@ main {
   margin: 10px 0 20px;
 }
 
-.meetup-tag {
+.meetup-tag{
+  display: flex;
+}
+.meetup-tag-item {
   background-color: #FFCFA3;
+  text-align: center;
+  font-size: 0.7rem;
   color: rgb(0, 0, 0);
-  border: none;
   padding: 5px;
   border-radius: 3px;
   margin-right: 5px;
@@ -125,6 +69,9 @@ main {
   width: 30px;
   margin-left: 50px;
 }
+
+/* /Meetup Module*/
+
 .topo{
   display: flex;
   margin-left: 10px;
@@ -167,9 +114,6 @@ main {
   height: 50px;
 }
 
-.comentario{
-  display: flex;
-}
-.like{
+.comentario, .like{
   display: flex;
 }
