@@ -1,7 +1,8 @@
-body {
+body, html {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
   height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 .header {
@@ -58,4 +59,116 @@ body {
   border: none;
   outline: none;
   padding: 10px;
+}
+
+main {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+.meetup-recente {
+  width: 30%;
+  border-right: #000000 solid 0.5px;
+  background-color: #f4f4f4;
+  padding: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  align-items: center;
+}
+
+.meetup-recente::-webkit-scrollbar {
+  display: none;
+}
+
+.meetup-recente h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.meetup-recente div {
+  background-color: rgba(11, 95, 255, 0.5);
+  border: 1px solid #ddd;
+  margin: 15px 30px 15px 30px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.meetup-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.meetup-titulo {
+  font-weight: bold;
+  margin: 10px 0 20px;
+}
+
+.meetup-tag {
+  background-color: #0b5fff;
+  color: white;
+  border: none;
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.meetup-recente-icon {
+  width: 30px;
+  margin-right: 3px;
+}
+
+.meetup-recente-icon-share {
+  width: 30px;
+  margin-left: 50px;
+}
+
+.content {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.content h2 {
+  margin-bottom: 30px;
+}
+
+.post {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.post img {
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  margin-right: 15px;
+}
+
+.post-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.post-text {
+  margin-bottom: 10px;
+}
+
+.post-image {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
 }
