@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;  
+  }
+
+.fundo-esqueceuSenha {
+    background: url(../img/esqueceuSenha/Screenshot_14.png);
+    overflow: hidden;
+    height: 100vh;
+}
+
+.header {
+    background-color: #0b5fff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: #eaeaea;
+    padding: 0 20px;
+  }
+
+.esqueceuSenha-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+}
+
+.esqueceuSenha-box {
+  background-color: #0b5fff;
+  padding: 30px;
+  border-radius: 30px;
+  width: 350px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.esqueceuSenha-titulo {
+  /*justify-align: center;*/
+  color: #ffffff;
+  margin: 20px;
+}
+
+.esqueceuSenha-conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form input[type="esqueceuSenha-form"] {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    font-size: 14px;
+}
+
+form input[type="email"] {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    font-size: 14px;
+}
+
+.esqueceuSenha-formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+form button {
+    width: 30%;
+    padding: 10px;
+    background-color: #666666;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 14px;
+    margin: 10px 0;
+}
+
+form button:hover {
+    background-color: hsl(0, 0%, 31%);
+}
