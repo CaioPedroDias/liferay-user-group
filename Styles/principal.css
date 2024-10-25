@@ -5,16 +5,15 @@ main {
   display: flex;
   height: calc(100vh - 60px);
 }
-/* Meetup Module*/
+
+/* Meetup Module */
 .meetup-recente {
   width: 45%;
-  border-right: #000000 solid 0.5px;
-  background-color: #f4f4f4;
+  border-right: #888888 solid 0.5px;
   padding: 10px;
   overflow-y: scroll;
   scrollbar-width: none;
   -ms-overflow-style: none;
-  align-items: center;
 }
 
 .meetup-recente::-webkit-scrollbar {
@@ -26,13 +25,19 @@ main {
   text-align: center;
 }
 
-.meetup-recente div {
-  background-color: rgba(11, 95, 255, 0.5);
+.meetup-card {
+  background-color: rgba(11, 95, 255, 0.7);
   border: 1px solid #ddd;
-  margin: 15px 30px 15px 30px;
+  margin: 10px 20px;
   padding: 10px;
-  border-radius: 6px;
+  border-radius: 8px;
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.meetup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .meetup-thumb {
@@ -44,11 +49,14 @@ main {
 .meetup-titulo {
   font-weight: bold;
   margin: 10px 0 20px;
+  text-align: center;
 }
 
-.meetup-tag{
+.meetup-tag {
   display: flex;
+  margin-top: 10px;
 }
+
 .meetup-tag-item {
   background-color: #FFCFA3;
   text-align: center;
@@ -58,6 +66,11 @@ main {
   border-radius: 3px;
   margin-right: 5px;
   margin-bottom: 10px;
+}
+
+.meetup-icons {
+  display: flex;
+  align-items: center;
 }
 
 .meetup-recente-icon {
@@ -70,9 +83,9 @@ main {
   margin-left: 50px;
 }
 
-/* /Meetup Module*/
+/* /Meetup Module */
 
-.topo{
+.topo {
   display: flex;
   margin-left: 10px;
   gap: 30px;
@@ -80,40 +93,40 @@ main {
   border-bottom: 2px solid #88888888;
 }
 
-.topo a{
+.topo a {
   display: flex;
   color: black;
   font-size: 25px;
   text-decoration: none;
 }
 
-.publicacao{
+.publicacao {
   margin-left: 10px;
   margin: 25px;
   border-bottom: 2px solid #88888888;
 }
 
-.publicacao img{
+.publicacao img {
   width: 70px;
   height: 55px;
   margin: 0;
   padding-right: 10px;
 }
 
-.descricao{
+.descricao {
   display: flex;
 }
 
-.avaliacao{
+.avaliacao {
   display: flex;
   gap: 25px;
 }
 
-.avaliacao img{
+.avaliacao img {
   width: 40px;
   height: 50px;
 }
 
-.comentario, .like{
+.comentario, .like {
   display: flex;
 }
