@@ -8,8 +8,8 @@ main {
 
 /* Meetup Module */
 .meetup-recente {
-  width: 45%;
-  border-right: #888888 solid 0.5px;
+  width: 35%;
+  border-right: #888888 solid 1px;
   padding: 10px;
   overflow-y: scroll;
   scrollbar-width: none;
@@ -28,9 +28,10 @@ main {
 .meetup-card {
   background-color: rgba(11, 95, 255, 0.7);
   border: 1px solid #ddd;
-  margin: 10px 20px;
-  padding: 10px;
-  border-radius: 8px;
+  margin: 10px 5px;
+  padding: 15px;
+  padding-bottom: 20px;
+  border-radius: 12px;
   box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
 }
 
@@ -85,36 +86,97 @@ main {
 
 /* /Meetup Module */
 
-.topo {
-  display: flex;
-  margin-left: 10px;
-  gap: 30px;
-  margin: 25px;
-  border-bottom: 2px solid #88888888;
-}
-
-.topo a {
-  display: flex;
-  color: black;
-  font-size: 25px;
-  text-decoration: none;
-}
-
 .publicacao {
-  margin-left: 10px;
-  margin: 25px;
-  border-bottom: 2px solid #88888888;
+  margin: 15px;
+  margin-top: 10px;
+}
+
+.header-postagens {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.header-postagens p {
+  color: #888888;
+  margin-top: 5px;
+}
+
+.filtro-destacado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  padding: 5px 10px;
+  background: none;
+  border-radius: 4px;
+  margin-top: 0%;
+  border: 1px solid;
+}
+
+.filtro-destacado span {
+  color: #888888;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: left;
+}
+
+#filtro-acesso{
+  width: 18px;
+  height: 18px;
+  margin-right: -12px;
+}
+
+.publicacao p {
+  color: #888888;
+  margin-top: 5px;
 }
 
 .publicacao img {
-  width: 70px;
+  width: 60px;
   height: 55px;
   margin: 0;
   padding-right: 10px;
 }
 
+.publicacao a {
+  text-decoration: underline;
+  color: #23B7FF;
+}
+
+.publicacao h3 {
+  margin: 10px;
+  margin-top: 5px;
+}
+
 .descricao {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.publicacao-acoes {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.publicacao .seguir {
+  background-color: #0B5FFF;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.publicacao .configuracoes {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
 }
 
 .avaliacao {
@@ -123,10 +185,22 @@ main {
 }
 
 .avaliacao img {
-  width: 40px;
-  height: 50px;
+  width: 41px;
+  height: 41px;
 }
 
 .comentario, .like {
   display: flex;
+  margin-top: 5px;
+}
+
+.comentario {
+  margin-top: 8px;
+}
+
+.publicacao hr {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  border: 0;
+  border-top: 1px solid #88888888;
 }
