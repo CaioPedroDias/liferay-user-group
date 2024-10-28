@@ -4,21 +4,21 @@ body {
     height: 100vh;  
 }
 
-.fundo-esqueceuSenha {
-    background: url(../img/esqueceuSenha/Screenshot_14.png);
+.fundo-registro {
+    background: url(../img/registro/Screenshot_14.png);
     overflow: hidden;
     height: 100vh;
 }
 
-.header {
+header {
     background-color: #0b5fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #eaeaea;
     padding: 0 20px;
-  }
+}
 
-.esqueceuSenha-container {
+.registro-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,7 +26,7 @@ body {
   width: 100%;
 }
 
-.esqueceuSenha-box {
+.registro-box {
   background-color: #0b5fff;
   padding: 30px;
   border-radius: 30px;
@@ -35,13 +35,12 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.esqueceuSenha-titulo {
-  /*justify-align: center;*/
-  color: #ffffff;
-  margin: 20px;
+.registro-titulo {
+    color: #eaeaea;
+    margin: 20px;
 }
 
-.esqueceuSenha-conteudo {
+.registro-conteudo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +48,27 @@ body {
     text-align: center;
 }
 
-form input[type="esqueceuSenha-form"] {
+form input[type="registro-form"] {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    font-size: 14px;
+}
+
+form input[type="nome"] {
+    width: 90%;
+    padding: 15px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #dcdcdc;
+    font-size: 14px;
+}
+
+form input[type="sobrenome"] {
     width: 90%;
     padding: 15px;
     margin: 10px 0;
@@ -69,7 +88,7 @@ form input[type="email"] {
     font-size: 14px;
 }
 
-.esqueceuSenha-formulario {
+.registro-formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -85,8 +104,9 @@ form button {
     border: none;
     border-radius: 30px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 12px;
     margin: 10px 0;
+    text-align: center;
 }
 
 form button:hover {

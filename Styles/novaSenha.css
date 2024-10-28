@@ -4,44 +4,43 @@ body {
     height: 100vh;  
 }
 
-.fundo-esqueceuSenha {
-    background: url(../img/esqueceuSenha/Screenshot_14.png);
+.fundo-novaSenha {
+    background: url(../img/novaSenha/Screenshot_14.png);
     overflow: hidden;
     height: 100vh;
 }
 
-.header {
+header {
     background-color: #0b5fff;
     display: grid;
     grid-template-columns: 1fr 1fr;
     color: #eaeaea;
     padding: 0 20px;
-  }
-
-.esqueceuSenha-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  width: 100%;
 }
 
-.esqueceuSenha-box {
-  background-color: #0b5fff;
-  padding: 30px;
-  border-radius: 30px;
-  width: 350px;
-  text-align: center;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+.novaSenha-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
 }
 
-.esqueceuSenha-titulo {
-  /*justify-align: center;*/
-  color: #ffffff;
-  margin: 20px;
+.novaSenha-box {
+    background-color: #0b5fff;
+    padding: 30px;
+    border-radius: 30px;
+    width: 350px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.esqueceuSenha-conteudo {
+.novaSenha-titulo {
+    color: #ffffff;
+    margin: 20px;
+}
+
+.novaSenha-conteudo {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +48,7 @@ body {
     text-align: center;
 }
 
-form input[type="esqueceuSenha-form"] {
+form input [type="novaSenha-form"] {
     width: 90%;
     padding: 15px;
     margin: 10px 0;
@@ -59,7 +58,7 @@ form input[type="esqueceuSenha-form"] {
     font-size: 14px;
 }
 
-form input[type="email"] {
+form input[type="novaSenha"] {
     width: 90%;
     padding: 15px;
     margin: 10px 0;
@@ -69,7 +68,7 @@ form input[type="email"] {
     font-size: 14px;
 }
 
-.esqueceuSenha-formulario {
+.novaSenha-formulario {
     display: flex;
     flex-direction: column;
     justify-content: center;
