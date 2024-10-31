@@ -1,24 +1,71 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/Styles/principal.css">
-  <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
-  <title>Encontro Online</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetup Liferay</title>
+    <link rel="stylesheet" href="../Styles/encontro-online-live.css">
+    <link rel="shortcut icon" href="/img/favicon.png" type="image/x-icon">
 </head>
 <body>
   <header class="header">
     <h1>Liferay User Group</h1>
     <div class="search-bar">
-      <img src="/img/header/filtro.webp" alt="botão de filtrar">
-      <div class="divisor"></div>
-      <input type="text" id="pesquisa">
-      <img src="/img/header/search.webp" alt="botão de pesquisa">
+        <img src="/img/header/filtro.webp" alt="botão de filtrar">
+        <div class="divisor"></div>
+        <input type="text" id="pesquisa" placeholder="Buscar...">
+        <img src="/img/header/search.webp" alt="botão de pesquisa">
     </div>
     <div class="icones">
-      <img src="/img/header/slack.webp" alt="Slack">
-      <img src="/img/header/notificacao.webp" alt="Notificações">
-      <img src="/img/header/perfil.webp" alt="Perfil">
+        <img src="/img/header/slack.webp" alt="Slack">
+        <img src="/img/header/notificacao.webp" alt="Notificações">
+        <img src="/img/header/perfil.webp" alt="Perfil">
     </div>
-  </header>
+</header>
+
+    <div class="container">
+        <div class="content">
+            <!-- Área de imagem com borda vermelha -->
+            <div class="image-container">
+                <img src="../img/Encontro online/meetup 1510.png" alt="Imagem da apresentação">
+            </div>
+
+            <!-- Descrição do evento -->
+            <h2>Novidades sobre Busca: do básico ao avançado, novos recursos</h2>
+            <p>Meetup #37</p>
+            <div class="event-info">
+                <span>15/10/2024</span>
+                <span>👁️ 59</span>
+            </div>
+
+            <!-- Host e avaliação -->
+            <div class="host-rating">
+                <div class="host">
+                    <p>Hospedado por:</p>
+                    <img src="host-imagem.png" alt="Anne Durey">
+                    <p>Anne Durey</p>
+                </div>
+                <div class="rating">
+                    ★★★★★☆
+                </div>
+                <button class="share-button">Compartilhar</button>
+            </div>
+        </div>
+
+        <!-- Chat de Meetup -->
+        <div class="meetup-chat">
+            <h3>Meetup Chat</h3>
+            <div class="chat-box">
+                <p><strong>@João_Silva:</strong> Acho que o sistema de busca poderia ter mais filtros, como data e relevância...</p>
+                <p><strong>@Maria_Ferreira:</strong> Concordo! Também seria útil se a busca conseguisse entender sinônimos...</p>
+                <p><strong>@Lucas_Mendes:</strong> Alguém já testou a busca com grandes volumes de dados?</p>
+                <!-- Continue com as mensagens do chat -->
+            </div>
+            <form class="comment-form">
+                <input type="text" placeholder="Comentar">
+                <button>Enviar</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
