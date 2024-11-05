@@ -1,0 +1,281 @@
+@import "./global.css";
+@import "./header.css";
+
+main {
+  display: flex;
+  height: calc(100vh - 60px);
+}
+
+/* Meetup Module */
+.meetup-recente {
+  width: 35%;
+  border-right: #888888 solid 1px;
+  padding: 10px;
+  overflow-y: scroll;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.meetup-recente::-webkit-scrollbar {
+  display: none;
+}
+
+.meetup-recente h2 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.meetup-card {
+  background-color: rgba(11, 95, 255, 0.7);
+  border: 1px solid #ddd;
+  margin: 10px 5px;
+  padding: 15px;
+  padding-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.meetup-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.meetup-thumb {
+  width: 80%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.meetup-titulo {
+  font-weight: bold;
+  margin: 10px 0 20px;
+  text-align: center;
+}
+
+.meetup-tag {
+  display: flex;
+  margin-top: 10px;
+}
+
+.meetup-tag-item {
+  background-color: #FFCFA3;
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgb(0, 0, 0);
+  padding: 5px;
+  border-radius: 3px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.meetup-icons {
+  display: flex;
+  align-items: center;
+}
+
+.meetup-recente-icon {
+  width: 30px;
+  margin-right: 3px;
+}
+
+.meetup-recente-icon-share {
+  width: 30px;
+  margin-left: 50px;
+}
+
+/* /Meetup Module */
+
+.publicacao {
+  margin: 15px;
+  margin-top: 10px;
+}
+
+.header-postagens {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.header-postagens p {
+  color: #888888;
+  margin-top: 5px;
+}
+
+.filtro-destacado {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 150px;
+  padding: 5px 10px;
+  background: none;
+  border-radius: 4px;
+  margin-top: 0%;
+  border: 1px solid;
+}
+
+.filtro-destacado span {
+  color: #888888;
+  font-weight: bold;
+  flex-grow: 1;
+  text-align: left;
+}
+
+#filtro-acesso{
+  width: 18px;
+  height: 18px;
+  margin-right: -12px;
+}
+
+.publicacao p {
+  color: #888888;
+  margin-top: 5px;
+}
+
+.publicacao img {
+  width: 60px;
+  height: 55px;
+  margin: 0;
+  padding-right: 10px;
+}
+
+.publicacao a {
+  text-decoration: underline;
+  color: #23B7FF;
+}
+
+.publicacao h3 {
+  margin: 10px;
+  margin-top: 5px;
+}
+
+.descricao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.publicacao-acoes {
+  display: flex;
+  gap: 10px;
+  margin-left: auto;
+}
+
+.publicacao .seguir {
+  background-color: #0B5FFF;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.publicacao .configuracoes {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.avaliacao {
+  display: flex;
+  gap: 25px;
+}
+
+.avaliacao img {
+  width: 41px;
+  height: 41px;
+}
+
+.comentario, .like {
+  display: flex;
+  margin-top: 5px;
+}
+
+.comentario {
+  margin-top: 8px;
+}
+
+.publicacao hr {
+  width: calc(100% + 30px);
+  margin-left: -15px;
+  border: 0;
+  border-top: 1px solid #88888888;
+}
+
+.search-bar{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  height: 90px;
+  width: 370px;
+  padding: 15px;
+  padding-bottom: 0;
+  border: 1px solid #ccc;
+  background-color: #FFE5FD;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  color: #000;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-menu.visible {
+  display: flex;
+} 
+
+.participarSlack{
+  display: none;
+  position: absolute;
+  background-color: #FFE5FD;
+  color: #000;
+  top: 70px;
+  height: 290px;
+  width: 250px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  text-align: center;
+  right: 70px;
+}
+
+.participarSlack.visible{
+  display: block;
+}
+
+.participarSlack h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  justify-self: center;
+  font-weight: normal;
+}
+
+#junte-se{
+  background-color: #2EB7FF;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  justify-self: center;
+}
+
+.participarSlack p {
+  font-size: 16px;
+  line-height: 1.5;
+}
