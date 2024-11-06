@@ -37,3 +37,10 @@ const notif = document.getElementById("notif");
 notificacao.addEventListener("click", () => {
     notif.classList.toggle("visible");
 });
+
+const perfil = document.getElementById("perfil");
+const user = document.getElementById("user");
+
+perfil.addEventListener("click", () => {
+    user.classList.toggle("visible");
+});
