@@ -30,3 +30,10 @@ const participar = document.getElementById("participar");
 slack.addEventListener("click", () => {
     participar.classList.toggle("visible");
 });
+
+const notificacao = document.getElementById("notificacao");
+const notif = document.getElementById("notif");
+
+notificacao.addEventListener("click", () => {
+    notif.classList.toggle("visible");
+});
