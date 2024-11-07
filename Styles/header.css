@@ -16,6 +16,7 @@
   display: flex;
   justify-self: end;
   gap: 40px;
+  cursor: pointer;
 }
 
 .icones img {
@@ -49,6 +50,7 @@
 .search-bar img {
   height: 25px;
   width: 25px;
+  cursor: pointer;
 }
 
 
