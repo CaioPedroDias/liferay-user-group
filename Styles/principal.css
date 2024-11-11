@@ -204,3 +204,167 @@ main {
   border: 0;
   border-top: 1px solid #88888888;
 }
+.search-bar{
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline: none;
+}
+
+.filter-menu {
+  display: none;
+  position: absolute;
+  top: 50px;
+  height: 90px;
+  width: 370px;
+  padding: 15px;
+  padding-bottom: 0;
+  border: 1px solid #ccc;
+  background-color: #FFE5FD;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 25px;
+  color: #000;
+  margin-top: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.filter-menu.visible {
+  display: flex;
+} 
+
+.participarSlack{
+  display: none;
+  position: absolute;
+  background-color: #FFE5FD;
+  color: #000;
+  top: 70px;
+  height: 290px;
+  width: 250px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  text-align: center;
+  right: 70px;
+}
+
+.participarSlack.visible{
+  display: block;
+}
+
+.participarSlack h2 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  justify-self: center;
+  font-weight: normal;
+}
+
+#junte-se{
+  background-color: #2EB7FF;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  border: none;
+  justify-self: center;
+}
+
+.participarSlack p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.notify{
+  display: none;
+  position: absolute;
+  background-color: #FFE5FD;
+  color: #000;
+  top: 70px;
+  height: 555px;
+  width: 350px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  text-align: center;
+  right: 15px;
+}
+
+.notify.visible{
+  display: block;
+}
+
+.notify img{
+  max-width: 100%;
+  width: 250px;
+  height: 150px;
+}
+
+.notify h2 h4{
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.header-notify {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%; 
+  max-width: 300px; 
+  margin: 0 auto;
+  padding: 10px 20px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+.notify h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+}
+
+.config{
+  display: none;
+  position: absolute;
+  background-color: #FFE5FD;
+  color: #000;
+  top: 70px;
+  height: 470px;
+  width: 250px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  text-align: center;
+  right: 0px;
+}
+
+.config.visible{
+  display: block;
+}
+
+.usuario{
+  display: flex;
+  margin: 10px;
+}
+
+.usuario h2 {
+  margin: 10px;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.item-perfil {
+  display: flex;
+  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  margin: 10px 0;
+}
+
+.item-perfil img {
+  margin: 10px;
+  height: 35px;
+  width: 35px;
+}

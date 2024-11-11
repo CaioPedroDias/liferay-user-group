@@ -11,17 +11,65 @@
   <header class="header">
     <h1>Liferay User Group</h1>
     <div class="search-bar">
-        <img src="/img/header/filtro.webp" alt="botão de filtrar">
-        <div class="divisor"></div>
-        <input type="text" id="pesquisa" placeholder="Buscar...">
-        <img src="/img/header/search.webp" alt="botão de pesquisa">
+      <button id="filtro"><img src="/img/header/filtro.webp" alt="botão de filtrar"></button>
+        <div id="filterMenu" class="filter-menu">
+            <label><input type="checkbox">Back-end</label><br>
+            <label><input type="checkbox">Commerce</label><br>
+            <label><input type="checkbox">Front-end</label><br>
+            <label><input type="checkbox">AI</label><br>
+            <label><input type="checkbox">Low-Code</label><br>
+            <label><input type="checkbox">Objects</label><br>
+            <label><input type="checkbox">Fragment</label><br>
+        </div>
+
+      <div class="divisor"></div>
+      <input type="text" id="pesquisa">
+      <img src="/img/header/search.webp" alt="botão de pesquisa">
     </div>
+
+
     <div class="icones">
-        <img src="/img/header/slack.webp" alt="Slack">
-        <img src="/img/header/notificacao.webp" alt="Notificações">
-        <img src="/img/header/perfil.webp" alt="Perfil">
+      <button id="slack"><img src="/img/header/slack.webp" alt="Slack"></button>
+        <div id="participar" class="participarSlack">
+          <h2>Participe da nossa comunidade do Slack</h2>
+          <p id="junte-se">JUNTE-SE A NÓS</p>
+          <p>Participe de discussões em <br>
+            tempo real, compartilhe <br>
+            conhecimento e fique por <br> 
+            dentro das novidades da <br> 
+            nossa comunidade.</p>
+        </div>
+
+      <button id="notificacao"><img src="/img/header/notificacao.webp" alt="Notificações"></button>
+        <div id="notif" class="notify">
+          <div class="header-notify">
+            <h2>Notificações</h2>
+            <div class="filtro-destacado">
+              <span>Todos</span>
+              <img id="filtro-acesso" src="../img/principal/triangulo.png" alt="ícone de triângulo">
+            </div>
+          </div>
+            <h4>Um vídeo foi postado no canal liferay</h4>
+            <img src="/img/principal/liferay-dxp.png" alt="">
+            <hr>
+            <h4>Um encontro digital acabou de <br> começar, venha  se conectar </h4>
+            <img src="/img/principal/meetup 1510.png" alt="">
+        </div>
+      
+      <button id="perfil"><img src="/img/header/perfil.webp" alt="Perfil"></button>
+        <div id="user" class="config">
+          <div class="usuario"><img src="/img/principal/usuario.png" alt=""><h2>Nome Usuário</h2></div>
+
+          <div class="item-perfil"><img src="/img/principal/favorito.png" alt=""><a href="">Salvar</a></div>
+          <div class="item-perfil"><img src="/img/principal/histórico.png" alt=""><a href="">Histórico</a></div>
+          <div class="item-perfil"><img src="/img/principal/editar-perfil.png" alt=""><a href="">Editar Perfil</a></div>
+          <div class="item-perfil"><img src="/img/principal/suporte.png" alt=""><a href="">Ajuda e Suporte</a></div>
+          <div class="item-perfil"><img src="/img/principal/configurações.png" alt=""><a href="">Configurações</a></div>
+          <div class="item-perfil"><img src="/img/principal/sair.png" alt=""><a href="">Logout</a></div>
+        </div>
+
     </div>
-</header>
+  </header>
 
   <main>
     <section class="meetup-recente">

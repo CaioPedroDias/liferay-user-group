@@ -1,11 +1,53 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Seleciona todos os elementos com a classe "meetup-card"
     var meetupCards = document.querySelectorAll(".meetup-card");
     meetupCards.forEach(function (card) {
         card.addEventListener("click", function () {
-            // Obtém a URL do atributo data-url do card, garantindo que seja uma string
             var url = card.getAttribute("data-url");
             window.location.href = url;
         });
     });
+});
+
+const filtro = document.getElementById("filtro");
+const filterMenu = document.getElementById("filterMenu");
+
+const slack = document.getElementById("slack");
+const participar = document.getElementById("participar");
+
+const notificacao = document.getElementById("notificacao");
+const notif = document.getElementById("notif");
+
+const perfil = document.getElementById("perfil");
+const user = document.getElementById("user");
+
+// Função para fechar todas as outras divs
+function hideAllMenus(except) {
+    if (except !== filterMenu) filterMenu.classList.remove("visible");
+    if (except !== participar) participar.classList.remove("visible");
+    if (except !== notif) notif.classList.remove("visible");
+    if (except !== user) user.classList.remove("visible");
+}
+
+// Toggle do filtro
+filtro.addEventListener("click", () => {
+    hideAllMenus(filterMenu);
+    filterMenu.classList.toggle("visible");
+});
+
+// Toggle do Slack
+slack.addEventListener("click", () => {
+    hideAllMenus(participar);
+    participar.classList.toggle("visible");
+});
+
+// Toggle das notificações
+notificacao.addEventListener("click", () => {
+    hideAllMenus(notif);
+    notif.classList.toggle("visible");
+});
+
+// Toggle do perfil
+perfil.addEventListener("click", () => {
+    hideAllMenus(user);
+    user.classList.toggle("visible");
 });
