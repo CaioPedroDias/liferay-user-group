@@ -84,7 +84,7 @@ main {
   margin-left: 50px;
 }
 
-/* /Meetup Module */
+/* Meetup Module */
 
 .publicacao {
   margin: 15px;
@@ -268,7 +268,9 @@ button {
 #junte-se{
   background-color: #2EB7FF;
   color: white;
-  padding: 20px;
+  padding: 15px;
+  margin-left: 10px;
+  margin-right: 10px;
   border-radius: 15px;
   border: none;
   justify-self: center;
@@ -359,7 +361,7 @@ button {
 
 .item-perfil {
   display: flex;
-  align-items: center; /* Alinha a imagem e o texto verticalmente ao centro */
+  align-items: center;
   margin: 10px 0;
 }
 
@@ -367,4 +369,44 @@ button {
   margin: 10px;
   height: 35px;
   width: 35px;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .meetup-recente {
+    display: none;
+    width: 100%;
+    border-right: none;
+    padding: 10px 5px;
+  }
+
+  .publicacao {
+    margin: 10px 5px;
+  }
+
+  .header-postagens {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .meetup-card {
+    margin: 10px 0;
+  }
+
+  .search-bar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .filter-menu {
+    width: 100%;
+  }
+
+  .icones button {
+    margin: 5px;
+  }
 }

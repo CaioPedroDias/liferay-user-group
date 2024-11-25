@@ -1,4 +1,4 @@
-/* Global */
+/* Global */  
 .header {
   background-color: #0b5fff;
   display: grid;
@@ -60,4 +60,13 @@
   outline: none;
   padding: 10px;
 }
-/*Search Bar*/
+.icones button.active {
+  background-color: rgba(255, 255, 255, 0.3); 
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.icones button img.active {
+  transform: scale(1.2);
+  transition: transform 0.2s ease;
+}

@@ -24,7 +24,7 @@ main {
 }
 
 .meetup-card-focus img {
-  width: 100%;
+  width: 80%;
   border-radius: 8px;
   margin-bottom: 15px;
 }
@@ -39,7 +39,7 @@ main {
 }
 
 .titulo {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-weight: bold;
 }
 

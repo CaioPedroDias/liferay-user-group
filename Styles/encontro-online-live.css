@@ -1,6 +1,6 @@
 @import "./global.css";
 @import "./header.css";
-/* Geral */
+
 body {
   font-family: Arial, sans-serif;
   background-color: #f0f2f5;
@@ -23,8 +23,8 @@ body {
 }
 
 .image-container img {
-  width: 1300px;
-  height: 600px;
+  width: 1000px;
+  height: 500px;
   border-radius: 20px;
 }
 
